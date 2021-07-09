@@ -43,7 +43,7 @@ import java.nio.ByteBuffer;
 @SpecVersion(
         spec = "sparkplug",
         version = "3.0.0-SNAPSHOT")
-public class SessionEstablishment extends TCKTest {
+public class SessionEstablishmentTest extends TCKTest {
 
     private static Logger logger = LoggerFactory.getLogger("Sparkplug");
     private HashMap testResults = new HashMap<String, String>();
@@ -63,8 +63,8 @@ public class SessionEstablishment extends TCKTest {
     private TCK theTCK = null;
     private String host_application_id = null;
     
-    public SessionEstablishment(TCK aTCK, String[] parms) {
-        logger.info("Primary host session establishment test");
+    public SessionEstablishmentTest(TCK aTCK, String[] parms) {
+        logger.info("Primary host session establishment test. Parameter: host_application_id");
         theTCK = aTCK;
          
         testResults = new HashMap<String, String>();

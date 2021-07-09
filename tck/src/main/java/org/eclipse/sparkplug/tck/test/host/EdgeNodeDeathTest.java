@@ -48,7 +48,7 @@ import java.nio.ByteBuffer;
 @SpecVersion(
         spec = "sparkplug",
         version = "3.0.0-SNAPSHOT")
-public class EdgeNodeDeath extends TCKTest {
+public class EdgeNodeDeathTest extends TCKTest {
 
     private static Logger logger = LoggerFactory.getLogger("Sparkplug");
     private HashMap testResults = new HashMap<String, String>();
@@ -60,7 +60,7 @@ public class EdgeNodeDeath extends TCKTest {
     private TCK theTCK = null;
     private String host_application_id = null;
     
-    public EdgeNodeDeath(TCK aTCK, String[] parms) {
+    public EdgeNodeDeathTest(TCK aTCK, String[] parms) {
         logger.info("Primary host receive data test");
         theTCK = aTCK;
          

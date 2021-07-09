@@ -14,6 +14,7 @@ import javax.validation.constraints.NotNull;
 import org.eclipse.sparkplug.tck.test.TCK;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.event.Level;
 
 import com.hivemq.extension.sdk.api.ExtensionMain;
 import com.hivemq.extension.sdk.api.parameter.ExtensionStartInput;

@@ -34,11 +34,11 @@ public class ConnectInterceptor implements ConnectInboundInterceptor {
 		try {
 			String clientId = connectInboundInput.getClientInformation().getClientId();
 					
-			logger.info("Inbound connect from '{}'", clientId);
-			logger.info("\tInet Address {}", connectInboundInput.getConnectionInformation().getInetAddress());
-			logger.info("\tMQTT Version {}", connectInboundInput.getConnectionInformation().getMqttVersion());
-			logger.info("\tClean Start {}", connectInboundInput.getConnectPacket().getCleanStart());
-			logger.info("\tKeep Alive {}", connectInboundInput.getConnectPacket().getKeepAlive());
+			logger.debug("Inbound connect from '{}'", clientId);
+			logger.debug("\tInet Address {}", connectInboundInput.getConnectionInformation().getInetAddress());
+			logger.debug("\tMQTT Version {}", connectInboundInput.getConnectionInformation().getMqttVersion());
+			logger.debug("\tClean Start {}", connectInboundInput.getConnectPacket().getCleanStart());
+			logger.debug("\tKeep Alive {}", connectInboundInput.getConnectPacket().getKeepAlive());
 			
 			ConnectPacket packet = connectInboundInput.getConnectPacket();
 			theTCK.connect(clientId, packet);

@@ -48,7 +48,7 @@ import java.nio.ByteBuffer;
 @SpecVersion(
         spec = "sparkplug",
         version = "3.0.0-SNAPSHOT")
-public class ReceiveData extends TCKTest {
+public class ReceiveDataTest extends TCKTest {
 
     private static Logger logger = LoggerFactory.getLogger("Sparkplug");
     private HashMap testResults = new HashMap<String, String>();
@@ -60,7 +60,7 @@ public class ReceiveData extends TCKTest {
     private TCK theTCK = null;
     private String host_application_id = null;
     
-    public ReceiveData(TCK aTCK, String[] parms) {
+    public ReceiveDataTest(TCK aTCK, String[] parms) {
         logger.info("Primary host receive data test");
         theTCK = aTCK;
          

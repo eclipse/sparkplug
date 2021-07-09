@@ -42,7 +42,7 @@ public class TCK {
 			current = (TCKTest)constructor.newInstance(parameters);
 		}
 		catch (Exception e) {
-			logger.error("Could not find or set test class "+profile+"."+test, e);
+			logger.info("Could not find or set test class "+profile+"."+test);
 		}
 	}
 	

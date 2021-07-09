@@ -59,6 +59,7 @@ tasks.hivemqExtensionResources {
 /* ******************** dependencies ******************** */
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven {
         url = uri("https://repository.jboss.org/nexus/content/groups/public-jboss/")
@@ -80,6 +81,8 @@ dependencies {
     runtimeOnly("org.junit.jupiter:junit-jupiter-engine:${property("junit-jupiter.version")}")
     implementation("jakarta.annotation:jakarta.annotation-api:${property("jakarta.annotation.version")}")
     implementation("jakarta.validation:jakarta.validation-api:${property("jakarta.validation.version")}")
+    
+    implementation("org.eclipse.tahu:tahu-java:${property("tahu.version")}")
 }
 
 
